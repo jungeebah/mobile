@@ -19,7 +19,7 @@ class Songs extends StatelessWidget {
               fontStyle: FontStyle.normal,
             ),
           ),
-          new ListView(
+          new Column(
             children: <Widget>[
               ...songs.map(
                 (e) => new SizedBox(
