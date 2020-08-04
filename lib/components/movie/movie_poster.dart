@@ -6,7 +6,7 @@ class Poster extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 280.0,
+      height: 400.0,
       child: Container(
           width: double.infinity,
           child: new Opacity(

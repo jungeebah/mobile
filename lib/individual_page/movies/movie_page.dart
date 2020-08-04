@@ -30,43 +30,56 @@ class MoviePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Hernucha'),
-      ),
-      body: SingleChildScrollView(
-        child: new Column(
-          children: <Widget>[
-            Stack(
-              children: <Widget>[
-                new Poster(image),
-                Positioned(
-                  top: 100,
-                  left: 0,
-                  right: 0,
-                  child: new Align(
-                    alignment: Alignment.bottomCenter,
-                    child: new Image.asset(
-                      'assets/play-button.png',
-                      fit: BoxFit.fill,
+      body: CustomScrollView(
+        slivers: <Widget>[
+          SliverAppBar(
+            backgroundColor: Colors.blue[100],
+            expandedHeight: 350.0,
+            flexibleSpace: FlexibleSpaceBar(
+              background: Stack(
+                children: <Widget>[
+                  new Poster(image),
+                  Positioned(
+                    top: 140,
+                    left: 0,
+                    right: 0,
+                    child: new Align(
+                      alignment: Alignment.bottomCenter,
+                      child: new IconButton(
+                        iconSize: 80,
+                        padding: new EdgeInsets.all(0.0),
+                        color: Colors.black,
+                        icon: new Icon(
+                          IconData(57400, fontFamily: 'MaterialIcons'),
+                        ),
+                        onPressed: () => print('pressed'),
+                      ),
                     ),
                   ),
+                ],
+              ),
+            ),
+          ),
+          SliverList(
+            delegate: SliverChildListDelegate(
+              [
+                new MovieInfo(
+                  name,
+                  movieYear,
+                  movieLength,
+                  movieGenre,
+                  movieRating,
                 ),
+                new Cast(movieActor),
+                new Streaming(streaming),
+                new Trailer(image),
+                new Songs(songs),
+                new SizedBox(height: 30),
               ],
             ),
-            new MovieInfo(
-              name,
-              movieYear,
-              movieLength,
-              movieGenre,
-              movieRating,
-            ),
-            new Cast(movieActor),
-            new Streaming(streaming),
-            new Trailer(image),
-            new Songs(songs),
-            new SizedBox(height: 30),
-          ],
-        ),
+          ),
+          
+        ],
       ),
     );
   }

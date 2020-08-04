@@ -48,10 +48,15 @@ class Songs extends StatelessWidget {
                                 fontStyle: FontStyle.normal,
                               ),
                             ),
-                            new SizedBox(
-                              height: 35,
-                              child: new Image.asset('assets/play-button.png'),
-                            )
+                            new IconButton(
+                              iconSize: 30,
+                              padding: new EdgeInsets.all(0.0),
+                              color: Colors.black,
+                              icon: new Icon(
+                                IconData(57400, fontFamily: 'MaterialIcons'),
+                              ),
+                              onPressed: () => print('pressed'),
+                            ),
                           ],
                         ),
                       )),
