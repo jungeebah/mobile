@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hernucha/individual_page/movies/movie_page.dart';
 
 class MovieScroller extends StatelessWidget {
@@ -314,11 +315,10 @@ class _MovieInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       movieName,
-      style: const TextStyle(
-          color: Colors.black,
-          fontFamily: 'Poppins',
-          fontWeight: FontWeight.w500,
-          fontSize: 20.0),
+      style: GoogleFonts.merriweather(
+        fontSize: 17,
+        fontStyle: FontStyle.normal,
+      ),
     );
   }
 }

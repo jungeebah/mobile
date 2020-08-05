@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SongScroller extends StatelessWidget {
   final movieList = [
@@ -64,11 +65,10 @@ class _SongInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       movieName,
-      style: const TextStyle(
-          color: Colors.black,
-          fontFamily: 'Poppins',
-          fontWeight: FontWeight.w500,
-          fontSize: 20.0),
+      style: GoogleFonts.merriweather(
+        fontSize: 17,
+        fontStyle: FontStyle.normal,
+      ),
     );
   }
 }

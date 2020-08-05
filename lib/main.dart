@@ -8,18 +8,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.lightBlueAccent[200],
-      ),
-      home: Scaffold(
-        body: Column(
-          children: <Widget>[
-            new NavBar("Hernucha"),
-            new HomePage(),
-          ],
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primaryColor: Colors.lightBlueAccent[200],
         ),
-      ),
-    );
+        home: Scaffold(
+          body: CustomScrollView(
+            slivers: <Widget>[
+              SliverAppBar(
+                backgroundColor: Colors.blue[100],
+                expandedHeight: 350.0,
+                flexibleSpace: FlexibleSpaceBar(
+                  background: new NavBar('Hernucha'),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate(
+                  [new HomePage()],
+                ),
+              )
+            ],
+          ),
+        ));
   }
 }
