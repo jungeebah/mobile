@@ -24,7 +24,7 @@ class MoviePage extends StatelessWidget {
   final String movieLength;
   final List<String> movieGenre;
   final String movieRating;
-  final List<String> movieActor;
+  final List<Map<String, Object>> movieActor;
   final List<String> streaming;
   final List<String> songs;
   @override
@@ -78,7 +78,6 @@ class MoviePage extends StatelessWidget {
               ],
             ),
           ),
-          
         ],
       ),
     );

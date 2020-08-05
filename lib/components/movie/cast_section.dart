@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hernucha/individual_page/cast/cast.dart';
 
 class Cast extends StatelessWidget {
-  final List<String> movieActor;
+  final List<Map<String, Object>> movieActor;
   Cast(this.movieActor);
   @override
   Widget build(BuildContext context) {
@@ -26,21 +27,42 @@ class Cast extends StatelessWidget {
                 ...movieActor.map(
                   (e) => Row(
                     children: <Widget>[
-                      SizedBox(
-                        height: 90.0,
-                        width: 70.0,
-                        child: Card(
-                          semanticContainer: true,
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          child: Image.asset(
-                            e,
-                            fit: BoxFit.fill,
+                      new GestureDetector(
+                        onTap: () => {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => CastPage(e),
+                            ),
                           ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          elevation: 5,
-                          margin: EdgeInsets.all(4),
+                        },
+                        child: Column(
+                          children: <Widget>[
+                            SizedBox(
+                              height: 150.0,
+                              width: 120.0,
+                              child: Card(
+                                semanticContainer: true,
+                                clipBehavior: Clip.antiAliasWithSaveLayer,
+                                child: Hero(
+                                  tag: e,
+                                  child: Image.asset(
+                                    e['image'],
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                elevation: 5,
+                                margin: EdgeInsets.all(4),
+                              ),
+                            ),
+                            new Text(e['name'],
+                                style: GoogleFonts.merriweather(
+                                  fontSize: 13,
+                                  fontStyle: FontStyle.normal,
+                                )),
+                          ],
                         ),
                       ),
                       new SizedBox(width: 10)

@@ -42,11 +42,17 @@ class Trailer extends StatelessWidget {
                   left: 0,
                   right: 0,
                   child: new SizedBox(
-                      height: 50,
-                      child: new Image.asset(
-                        'assets/play-button.png',
-                        color: Colors.white,
-                      )),
+                    height: 50,
+                    child: new IconButton(
+                      iconSize: 60,
+                      padding: new EdgeInsets.all(0.0),
+                      color: Colors.blueGrey,
+                      icon: new Icon(
+                        IconData(57400, fontFamily: 'MaterialIcons'),
+                      ),
+                      onPressed: () => print('pressed'),
+                    ),
+                  ),
                 ),
               ],
             ),

@@ -12,12 +12,38 @@ class MovieScroller extends StatelessWidget {
       'genre': ['action', 'comedy'],
       'rating': 'PG-13',
       'actor': [
-        'assets/saugat.jpg',
-        'assets/bipin.jpg',
-        'assets/aruna.jpg',
-        'assets/dayahang.jpg',
-        'assets/srijana.jpg',
-        'assets/reecha.jpg',
+        {
+          'name': 'Saugat Malla',
+          'image': 'assets/saugat.jpg',
+        },
+        {
+          'name': 'Bipin Karki',
+          'image': 'assets/bipin.jpg',
+        },
+        {
+          'name': 'Aruna Lamsal',
+          'image': 'assets/aruna.jpg',
+        },
+        {
+          'name': 'Dayahang Rai',
+          'image': 'assets/dayahang.jpg',
+        },
+        {
+          'name': 'Srijana',
+          'image': 'assets/srijana.jpg',
+        },
+        {
+          'name': 'Reecha Sharma',
+          'image': 'assets/reecha.jpg',
+        },
+        {
+          'name': 'Srijana',
+          'image': 'assets/srijana.jpg',
+        },
+        {
+          'name': 'Reecha Sharma',
+          'image': 'assets/reecha.jpg',
+        },
       ],
       'streaming': [
         'assets/amazonPrime.png',
@@ -37,12 +63,38 @@ class MovieScroller extends StatelessWidget {
       'genre': ['Drama,', 'Adventure'],
       'rating': 'PG-13',
       'actor': [
-        'assets/saugat.jpg',
-        'assets/bipin.jpg',
-        'assets/aruna.jpg',
-        'assets/dayahang.jpg',
-        'assets/srijana.jpg',
-        'assets/reecha.jpg',
+        {
+          'name': 'Saugat Malla',
+          'image': 'assets/saugat.jpg',
+        },
+        {
+          'name': 'Bipin Karki',
+          'image': 'assets/bipin.jpg',
+        },
+        {
+          'name': 'Aruna Lamsal',
+          'image': 'assets/aruna.jpg',
+        },
+        {
+          'name': 'Dayahang Rai',
+          'image': 'assets/dayahang.jpg',
+        },
+        {
+          'name': 'Srijana',
+          'image': 'assets/srijana.jpg',
+        },
+        {
+          'name': 'Reecha Sharma',
+          'image': 'assets/reecha.jpg',
+        },
+        {
+          'name': 'Srijana',
+          'image': 'assets/srijana.jpg',
+        },
+        {
+          'name': 'Reecha Sharma',
+          'image': 'assets/reecha.jpg',
+        },
       ],
       'streaming': [
         'assets/amazonPrime.png',
@@ -62,14 +114,38 @@ class MovieScroller extends StatelessWidget {
       'genre': ['action', 'Thriller', 'Drama'],
       'rating': 'PG-13',
       'actor': [
-        'assets/saugat.jpg',
-        'assets/bipin.jpg',
-        'assets/aruna.jpg',
-        'assets/dayahang.jpg',
-        'assets/srijana.jpg',
-        'assets/reecha.jpg',
-        'assets/srijana.jpg',
-        'assets/reecha.jpg',
+        {
+          'name': 'Saugat Malla',
+          'image': 'assets/saugat.jpg',
+        },
+        {
+          'name': 'Bipin Karki',
+          'image': 'assets/bipin.jpg',
+        },
+        {
+          'name': 'Aruna Lamsal',
+          'image': 'assets/aruna.jpg',
+        },
+        {
+          'name': 'Dayahang Rai',
+          'image': 'assets/dayahang.jpg',
+        },
+        {
+          'name': 'Srijana',
+          'image': 'assets/srijana.jpg',
+        },
+        {
+          'name': 'Reecha Sharma',
+          'image': 'assets/reecha.jpg',
+        },
+        {
+          'name': 'Srijana',
+          'image': 'assets/srijana.jpg',
+        },
+        {
+          'name': 'Reecha Sharma',
+          'image': 'assets/reecha.jpg',
+        },
       ],
       'streaming': [
         'assets/amazonPrime.png',
@@ -89,12 +165,30 @@ class MovieScroller extends StatelessWidget {
       'genre': ['action', 'drama'],
       'rating': 'PG-13',
       'actor': [
-        'assets/saugat.jpg',
-        'assets/bipin.jpg',
-        'assets/aruna.jpg',
-        'assets/dayahang.jpg',
-        'assets/srijana.jpg',
-        'assets/reecha.jpg',
+        {
+          'name': 'Saugat Malla',
+          'image': 'assets/saugat.jpg',
+        },
+        {
+          'name': 'Bipin Karki',
+          'image': 'assets/bipin.jpg',
+        },
+        {
+          'name': 'Aruna Lamsal',
+          'image': 'assets/aruna.jpg',
+        },
+        {
+          'name': 'Dayahang Rai',
+          'image': 'assets/dayahang.jpg',
+        },
+        {
+          'name': 'Srijana',
+          'image': 'assets/srijana.jpg',
+        },
+        {
+          'name': 'Reecha Sharma',
+          'image': 'assets/reecha.jpg',
+        },
       ],
       'streaming': [
         'assets/amazonPrime.png',
@@ -114,12 +208,30 @@ class MovieScroller extends StatelessWidget {
       'genre': ['Drama', 'comedy', 'Family'],
       'rating': 'PG-13',
       'actor': [
-        'assets/saugat.jpg',
-        'assets/bipin.jpg',
-        'assets/aruna.jpg',
-        'assets/dayahang.jpg',
-        'assets/srijana.jpg',
-        'assets/reecha.jpg',
+        {
+          'name': 'Saugat Malla',
+          'image': 'assets/saugat.jpg',
+        },
+        {
+          'name': 'Bipin Karki',
+          'image': 'assets/bipin.jpg',
+        },
+        {
+          'name': 'Aruna Lamsal',
+          'image': 'assets/aruna.jpg',
+        },
+        {
+          'name': 'Dayahang Rai',
+          'image': 'assets/dayahang.jpg',
+        },
+        {
+          'name': 'Srijana',
+          'image': 'assets/srijana.jpg',
+        },
+        {
+          'name': 'Reecha Sharma',
+          'image': 'assets/reecha.jpg',
+        },
       ],
       'streaming': [
         'assets/amazonPrime.png',
@@ -139,12 +251,30 @@ class MovieScroller extends StatelessWidget {
       'genre': ['action', 'comedy'],
       'rating': 'PG-13',
       'actor': [
-        'assets/saugat.jpg',
-        'assets/bipin.jpg',
-        'assets/aruna.jpg',
-        'assets/dayahang.jpg',
-        'assets/srijana.jpg',
-        'assets/reecha.jpg',
+        {
+          'name': 'Saugat Malla',
+          'image': 'assets/saugat.jpg',
+        },
+        {
+          'name': 'Bipin Karki',
+          'image': 'assets/bipin.jpg',
+        },
+        {
+          'name': 'Aruna Lamsal',
+          'image': 'assets/aruna.jpg',
+        },
+        {
+          'name': 'Dayahang Rai',
+          'image': 'assets/dayahang.jpg',
+        },
+        {
+          'name': 'Srijana',
+          'image': 'assets/srijana.jpg',
+        },
+        {
+          'name': 'Reecha Sharma',
+          'image': 'assets/reecha.jpg',
+        },
       ],
       'streaming': [
         'assets/amazonPrime.png',
@@ -191,7 +321,7 @@ class _MovieDisplay extends StatelessWidget {
   final String movieLength;
   final List<String> movieGenre;
   final String movieRating;
-  final List<String> movieActor;
+  final List<Map<String, Object>> movieActor;
   final List<String> streaming;
   final List<String> songs;
 
@@ -263,26 +393,28 @@ class _MovieCard extends StatelessWidget {
   final String movieLength;
   final List<String> movieGenre;
   final String movieRating;
-  final List<String> movieActor;
+  final List<Map<String, Object>> movieActor;
   final List<String> streaming;
   final List<String> songs;
   @override
   Widget build(BuildContext context) {
     return new GestureDetector(
       onTap: () => {
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => MoviePage(
-            movieImage,
-            movieName,
-            movieYear,
-            movieLength,
-            movieGenre,
-            movieRating,
-            movieActor,
-            streaming,
-            songs,
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => MoviePage(
+              movieImage,
+              movieName,
+              movieYear,
+              movieLength,
+              movieGenre,
+              movieRating,
+              movieActor,
+              streaming,
+              songs,
+            ),
           ),
-        ))
+        )
       },
       child: SizedBox(
         height: 160.0,
