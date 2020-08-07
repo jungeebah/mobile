@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NavBar extends StatelessWidget {
   final String title;
@@ -7,26 +8,51 @@ class NavBar extends StatelessWidget {
   NavBar(this.title);
   @override
   Widget build(BuildContext context) {
-    final double statusBarHeight = MediaQuery.of(context).padding.top;
-    return new Container(
-      padding: new EdgeInsets.only(top: statusBarHeight),
-      height: statusBarHeight + barHeight,
-      child: new Center(
-        child: new Text(title,
-            style: const TextStyle(
-                color: Colors.white,
-                fontFamily: 'Poppins',
-                fontWeight: FontWeight.w600,
-                fontSize: 36.0)),
-      ),
-      decoration: new BoxDecoration(
-        gradient: new LinearGradient(
-            colors: [const Color(0xFF3366FF), const Color(0xFF00CCFF)],
-            begin: const FractionalOffset(0.0, 0.0),
-            end: const FractionalOffset(2, 0.0),
-            stops: [0.0, 0.5],
-            tileMode: TileMode.clamp),
+    return ClipPath(
+      clipper: MyClipper(),
+      child: new Container(
+        padding: EdgeInsets.only(left: 40, top: 10, right: 20),
+        height: 350,
+        width: double.infinity,
+        child: new Center(
+            child: new Text(
+          title,
+          style: GoogleFonts.russoOne(
+            fontSize: 50,
+            color: Colors.white,
+            fontWeight: FontWeight.w400,
+            fontStyle: FontStyle.italic,
+          ),
+        )),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              Color(0xFF3383CD),
+              Color(0xFF11249F),
+            ],
+          ),
+        ),
       ),
     );
+  }
+}
+
+class MyClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    var path = Path();
+    path.lineTo(0, size.height - 80);
+    path.quadraticBezierTo(
+        size.width / 2, size.height, size.width, size.height - 80);
+    path.lineTo(size.width, 0);
+    path.close();
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    return false;
   }
 }

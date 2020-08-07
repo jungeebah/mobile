@@ -16,7 +16,13 @@ class MyApp extends StatelessWidget {
           body: CustomScrollView(
             slivers: <Widget>[
               SliverAppBar(
-                backgroundColor: Colors.blue[100],
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(200),
+                    bottomRight: Radius.circular(200),
+                  ),
+                ),
+                backgroundColor: Colors.white,
                 expandedHeight: 350.0,
                 flexibleSpace: FlexibleSpaceBar(
                   background: new NavBar('Hernucha'),

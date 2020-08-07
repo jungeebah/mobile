@@ -23,6 +23,7 @@ class CastPage extends StatelessWidget {
               floating: true,
               pinned: true,
               snap: true,
+              
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(30),
