@@ -17,12 +17,11 @@ class MyApp extends StatelessWidget {
             slivers: <Widget>[
               SliverAppBar(
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(200),
-                    bottomRight: Radius.circular(200),
+                  borderRadius: BorderRadius.vertical(
+                    bottom: new Radius.elliptical(1200, 350),
                   ),
                 ),
-                backgroundColor: Colors.white,
+                backgroundColor: Color.fromARGB(0, 249, 249, 249),
                 expandedHeight: 350.0,
                 flexibleSpace: FlexibleSpaceBar(
                   background: new NavBar('Hernucha'),

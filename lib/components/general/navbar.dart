@@ -24,15 +24,13 @@ class NavBar extends StatelessWidget {
             fontStyle: FontStyle.italic,
           ),
         )),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-            colors: [
-              Color(0xFF3383CD),
-              Color(0xFF11249F),
-            ],
-          ),
+        decoration: new BoxDecoration(
+          gradient: new LinearGradient(
+              colors: [const Color(0xFF3366FF), const Color(0xFF00CCFF)],
+              begin: const FractionalOffset(0.0, 0.0),
+              end: const FractionalOffset(2, 0.0),
+              stops: [0.0, 0.5],
+              tileMode: TileMode.clamp),
         ),
       ),
     );
