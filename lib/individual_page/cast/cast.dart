@@ -16,6 +16,7 @@ class CastPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
+        top: true,
         child: new CustomScrollView(
           slivers: <Widget>[
             SliverAppBar(
@@ -23,7 +24,6 @@ class CastPage extends StatelessWidget {
               floating: true,
               pinned: true,
               snap: true,
-              
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(30),

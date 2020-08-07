@@ -21,7 +21,6 @@ class NavBar extends StatelessWidget {
             fontSize: 50,
             color: Colors.white,
             fontWeight: FontWeight.w400,
-            fontStyle: FontStyle.italic,
           ),
         )),
         decoration: new BoxDecoration(
