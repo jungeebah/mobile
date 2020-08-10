@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hernucha/individual_page/movies/movie_page.dart';
 
 class MovieScroller extends StatelessWidget {
+  final String apiUrl = "https://randomuser.me/api/?results=10";
   final movieList = [
     {
       'name': 'Loot',
